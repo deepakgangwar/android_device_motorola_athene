@@ -228,12 +228,6 @@
     <!-- Default LED off time for notification LED in milliseconds. -->
     <integer name="config_defaultNotificationLedOff">500</integer>
 
-    <!-- Is the Battery LED intrusive? Used to decide if there should be a disable option -->
-    <!--bool name="config_intrusiveBatteryLed">true</bool -->
-
-    <!-- Is the Notification LED intrusive? Used to decide if there should be a disable option -->
-    <bool name="config_intrusiveNotificationLed">true</bool>
-
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
     <bool name="config_unplugTurnsOnScreen">true</bool>
 
@@ -324,7 +318,6 @@
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
     <!--integer name="config_deviceHardwareWakeKeys">64</integer-->
-
     <!-- Screen brightness used to dim the screen while dozing in a very low power state.
           May be less than the minimum allowed brightness setting
           that can be set by the user. -->
@@ -378,7 +371,8 @@
     <!-- Boolean indicating if current platform supports BLE peripheral mode -->
     <bool name="config_bluetooth_le_peripheral_mode_supported">true</bool>
 
-    <!-- Enable lockscreen blur feature -->
-    <!--bool name="config_uiBlurEnabled">false</bool-->
+    <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
+         in hardware. -->
+    <bool name="config_setColorTransformAccelerated">true</bool>
 
 </resources>
