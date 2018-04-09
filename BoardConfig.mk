@@ -189,7 +189,8 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/manifest.xml
 DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/configs/compatibility_matrix.xml
 
 # Properties
-TARGET_SYSTEM_PROP += device/motorola/athene/system.prop
+BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
+TARGET_VENDOR_PROP += $(VENDOR_PATH)/vendor.prop
 
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
